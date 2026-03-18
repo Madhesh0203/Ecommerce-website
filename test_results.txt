@@ -291,3 +291,20 @@ ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a
 [1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 11 of 10[31m (1 FAILED)[39m (0 secs / 0.156 secs)
 [1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 11 of 10[31m (1 FAILED)[39m (1.639 secs / 0.156 secs)
 [31mTOTAL: 1 FAILED, 10 SUCCESS[39m
+- Generating browser application bundles...
+Γ£ö Browser application bundle generation complete.
+
+Error: Module build failed (from ./node_modules/@ngtools/webpack/src/ivy/index.js):
+Error: ENOENT: no such file or directory, open 'C:\Users\Madheshwaran\Documents\Ecommerce-website\Ecommerce-website\node_modules\process\browser.js'
+
+Error: Module build failed (from ./node_modules/@ngtools/webpack/src/ivy/index.js):
+Error: ENOENT: no such file or directory, open 'C:\Users\Madheshwaran\Documents\Ecommerce-website\Ecommerce-website\node_modules\webpack\buildin\global.js'
+
+
+- Generating browser application bundles...
+Γ£ö Browser application bundle generation complete.
+
+Error: Module build failed (from ./node_modules/@ngtools/webpack/src/ivy/index.js):
+Error: ENOENT: no such file or directory, open 'C:\Users\Madheshwaran\Documents\Ecommerce-website\Ecommerce-website\node_modules\webpack\buildin\global.js'
+
+
