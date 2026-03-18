@@ -47,14 +47,14 @@ export class ShipInfoComponent implements OnInit {
 
   checkShipForm(): void {
     if (this.shipForm.valid) { this.currentStep = 1; }
-    else { alert('No se han ingresado todos los datos de envío'); }
+    else { alert('Please enter all shipping information.'); }
   }
 
   checkCardForm(): void {
     if (this.cardForm.valid) {
       this.router.navigate(['/home']);
     }
-    else { alert('No se han ingresado todos los datos de pago'); }
+    else { alert('Please enter all payment details.'); }
   }
 
 }

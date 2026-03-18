@@ -1,47 +1,68 @@
-<div class="container my-3">
-    <h3 class="title">Listado de productos</h3>
+<div class="container mt-5 animate__animated animate__fadeIn">
+    <div class="glass-panel p-5 shadow-lg">
+        <h2 class="fw-bold mb-4"><i class="bi bi-cart3 me-3 text-primary"></i>Your Shopping Cart</h2>
 
-    <table class="table table-striped my-2" *ngIf="products.length > 0">
-        <thead>
-            <tr>
-                <th scope="col">Cantidad</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Precio unidad</th>
-                <th scope="col">Precio total</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let p of products; let id = index">
-                <th scope="row" [ngClass]="{'selected-product': quantity[id] > 0}">
+        <div class="table-responsive" *ngIf="products.length > 0; else emptyCart">
+            <table class="table table-hover align-middle">
+                <thead class="bg-light bg-opacity-50">
+                    <tr>
+                        <th scope="col" class="border-0">Quantity</th>
+                        <th scope="col" class="border-0">Product Name</th>
+                        <th scope="col" class="border-0 text-end">Unit Price</th>
+                        <th scope="col" class="border-0 text-end">Total Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let p of products; let id = index" [ngClass]="{'table-active': quantity[id] > 0}">
+                        <td>
+                            <div class="btn-group shadow-sm rounded-pill overflow-hidden" role="group">
+                                <button class="btn btn-outline-success border-0 px-3" (click)="add(id)"><i class="bi bi-plus"></i></button>
+                                <button class="btn btn-light border-0 px-3 fw-bold bg-transparent" disabled>{{quantity[id]}}</button>
+                                <button class="btn btn-outline-danger border-0 px-3" (click)="substract(id)"><i class="bi bi-dash"></i></button>
+                            </div>
+                        </td>
+                        <td class="fw-medium text-dark">{{p.name | uppercase}}</td>
+                        <td class="text-end text-muted">$ {{p.price | number: '2.'}}</td>
+                        <td class="text-end fw-bold text-dark">$ {{p.price * quantity[id] | number: '2.'}}</td>
+                    </tr>
+                </tbody>
+            </table>
 
-                    <div class="btn-group" role="group">
-                        <button class="btn btn-outline-success" (click)="add(id)"><i class="bi bi-plus-circle"></i>
-                        </button>
-                        <button class="btn btn-outline-default disabled"
-                            [ngClass]="{'selected-product': quantity[id] > 0}">{{quantity[id]}}
-                        </button>
-                        <button class="btn btn-outline-danger" (click)="substract(id)"><i class="bi bi-dash-circle"></i>
-                        </button>
+            <div class="row justify-content-end mt-5">
+                <div class="col-md-5">
+                    <div class="p-4 bg-light rounded-4 shadow-sm">
+                        <div class="d-flex justify-content-between mb-3 text-muted">
+                            <span>Subtotal</span>
+                            <span>$ {{total | number: '2.'}}</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3 text-muted">
+                            <span>Tax (19% VAT)</span>
+                            <span>$ {{total * 0.19 | number: '2.'}}</span>
+                        </div>
+                        <hr class="my-3 opacity-10">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h4 class="fw-bold mb-0">Total Amount</h4>
+                            <h4 class="fw-bold text-success mb-0">$ {{total * 1.19 | number: '2.'}}</h4>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <a [routerLink]="['/shop/info']" class="btn btn-success btn-lg rounded-pill py-3 shadow-sm">
+                                <i class="bi bi-credit-card me-2"></i>Proceed to Checkout
+                            </a>
+                            <a [routerLink]="['/products']" class="btn btn-link text-muted text-decoration-none small">
+                                Continue Shopping
+                            </a>
+                        </div>
                     </div>
-                </th>
-                <td [ngClass]="{'selected-product': quantity[id] > 0}">{{p.name | uppercase}}</td>
-                <td [ngClass]="{'selected-product': quantity[id] > 0}">$ {{p.price | number: '1.'}}</td>
-                <td [ngClass]="{'selected-product': quantity[id] > 0}">$ {{p.price * quantity[id] | number: '1.'}}</td>
-            </tr>
-            <hr>
-            <tr>
-                <th scope="row">Total</th>
-                <td></td>
-                <td></td>
-                <td>$ {{total | currency:'CLP':'symbol'}}</td>
-            </tr>
-            <tr>
-                <th scope="row">Total + IVA</th>
-                <td></td>
-                <td></td>
-                <td>$ {{total * 1.19 | currency:'CLP':'symbol'}}</td>
-            </tr>
-        </tbody>
-    </table>
-    <a [routerLink]="['/shop/info']" routerLinkActive="active" class="btn btn-success">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <ng-template #emptyCart>
+            <div class="text-center py-5">
+                <i class="bi bi-cart-x display-1 text-muted opacity-25 mb-4"></i>
+                <h4 class="text-muted">Your cart is empty</h4>
+                <a [routerLink]="['/products']" class="btn btn-primary mt-3 px-5 rounded-pill">Explore Products</a>
+            </div>
+        </ng-template>
+    </div>
 </div>

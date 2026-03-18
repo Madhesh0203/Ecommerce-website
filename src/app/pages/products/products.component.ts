@@ -45,7 +45,7 @@ export class ProductsComponent implements OnInit {
       const { code, name, price, description, url } = this.form.value;
       this.products.push(new Product(code, name, price, description, url));
       this.form.reset();
-    } else { alert("Los datos ingresados no son válidos"); }
+    } else { alert("The data entered is not valid"); }
   }
 
   turnEditMode(): void {
@@ -70,7 +70,7 @@ export class ProductsComponent implements OnInit {
     if (this.editId > -1) {
       const product = this.products[this.editId];
       this.products.splice(this.editId, 1);
-      alert(`Se ha eliminado el producto ${product.name} de código: ${product.code}`);
+      alert(`Product ${product.name} with code ${product.code} has been deleted.`);
     }
     this.form.reset();
     this.editCode = '';
@@ -101,7 +101,7 @@ export class ProductsComponent implements OnInit {
   }
 
   addToCart(): void {
-    alert('Producto agregado al carrito!');
+    alert('Product added to cart!');
   }
 
 }
