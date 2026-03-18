@@ -1,0 +1,28 @@
+
+> ecommerce@0.0.0 dev
+> npm start
+
+
+> ecommerce@0.0.0 start
+> set NODE_OPTIONS=--openssl-legacy-provider && ng serve
+
+- Generating browser application bundles...
+(node:7672) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Γ£ö Browser application bundle generation complete.
+
+Initial Chunk Files   | Names         |      Size
+vendor.js             | vendor        |   3.05 MB
+polyfills.js          | polyfills     | 535.35 kB
+styles.css, styles.js | styles        | 407.55 kB
+main.js               | main          | 123.80 kB
+runtime.js            | runtime       |   6.15 kB
+
+| Initial Total |   4.10 MB
+
+Build at: 2026-03-18T08:46:34.824Z - Hash: 28b197ff6944e32863bc - Time: 6872ms
+
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+
+
+ΓêÜ Compiled successfully.

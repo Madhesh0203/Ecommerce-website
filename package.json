@@ -5,6 +5,7 @@
     "ng": "set NODE_OPTIONS=--openssl-legacy-provider && ng",
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve",
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && ng build",
+    "dev": "npm start",
     "test": "set NODE_OPTIONS=--openssl-legacy-provider && ng test",
     "lint": "set NODE_OPTIONS=--openssl-legacy-provider && ng lint",
     "e2e": "set NODE_OPTIONS=--openssl-legacy-provider && ng e2e"
@@ -16,7 +17,6 @@
     "minimist": "^1.2.6",
     "lodash": "^4.17.21",
     "body-parser": "^1.20.3",
-    "webpack-dev-middleware": "^5.3.4",
     "braces": "^3.0.3",
     "ws": "^8.18.0",
     "cross-spawn": "^7.0.5",
