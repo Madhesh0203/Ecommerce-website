@@ -28,7 +28,6 @@ jobs:
         cache: 'npm'
     - name: Install dependencies
       run: |
-        npm install -g npm@latest
         npm ci --legacy-peer-deps
     - name: Build
       run: npm run build --if-present
