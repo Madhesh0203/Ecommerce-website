@@ -38,5 +38,13 @@ export class ProductsService {
     return this.cart;
   }
 
+  addToCart(code: string): void {
+    if (this.cart[code]) {
+      this.cart[code]++;
+    } else {
+      this.cart[code] = 1;
+    }
+  }
+
 
 }

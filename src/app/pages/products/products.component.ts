@@ -20,8 +20,8 @@ export class ProductsComponent implements OnInit {
   form = new FormGroup({
     code: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(50)]),
     name: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(50)]),
-    price: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(50), Validators.min(1)]),
-    description: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(50)]),
+    price: new FormControl('', [Validators.required, Validators.min(1)]),
+    description: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(1000)]),
     url: new FormControl('')
   });
 
@@ -50,18 +50,19 @@ export class ProductsComponent implements OnInit {
 
   turnEditMode(): void {
     if (this.editId > -1) {
-      const { code, name, price, description } = this.products[this.editId];
-      this.form.setValue({ code, name, price, description });
+      const { code, name, price, description, url } = this.products[this.editId];
+      this.form.setValue({ code, name, price, description, url });
       this.editMode = true;
     }
   }
 
   editProduct(): void {
     if (this.editId > -1) {
-      const { code, name, price, description } = this.form.value;
-      this.products[this.editId] = new Product(code, name, price, description);
+      const { code, name, price, description, url } = this.form.value;
+      this.products[this.editId] = new Product(code, name, price, description, url);
       this.editMode = false;
       this.form.reset();
+      alert('Changes applied successfully!');
     }
   }
 
@@ -100,8 +101,9 @@ export class ProductsComponent implements OnInit {
     this.findByCode();
   }
 
-  addToCart(): void {
-    alert('Product added to cart!');
+  addToCart(code: string): void {
+    this.db.addToCart(code);
+    alert('Experience added to cart successfully!');
   }
 
 }

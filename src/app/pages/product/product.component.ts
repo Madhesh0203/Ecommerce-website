@@ -21,7 +21,8 @@ export class ProductComponent implements OnInit {
   }
 
   addToCart(): void {
-    alert('Product added to cart!');
+    this.db.addToCart(this.product.code);
+    alert('Experience added to cart successfully!');
   }
 
 }

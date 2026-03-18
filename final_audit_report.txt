@@ -1,0 +1,319 @@
+# npm audit report
+
+@angular/common  <=19.2.15
+Severity: high
+Depends on vulnerable versions of @angular/core
+Angular is Vulnerable to XSRF Token Leakage via Protocol-Relative URLs in Angular HTTP Client - https://github.com/advisories/GHSA-58c5-g7wp-6w37
+fix available via `npm audit fix --force`
+Will install @angular/common@19.2.20, which is a breaking change
+node_modules/@angular/common
+  @angular/forms  <=19.2.15
+  Depends on vulnerable versions of @angular/common
+  Depends on vulnerable versions of @angular/core
+  Depends on vulnerable versions of @angular/platform-browser
+  node_modules/@angular/forms
+  @angular/platform-browser  <=19.2.15
+  Depends on vulnerable versions of @angular/animations
+  Depends on vulnerable versions of @angular/common
+  Depends on vulnerable versions of @angular/core
+  node_modules/@angular/platform-browser
+  @angular/platform-browser-dynamic  <=19.2.15
+  Depends on vulnerable versions of @angular/common
+  Depends on vulnerable versions of @angular/compiler
+  Depends on vulnerable versions of @angular/core
+  Depends on vulnerable versions of @angular/platform-browser
+  node_modules/@angular/platform-browser-dynamic
+  @angular/router  <=0.0.0-ROUTERPLACEHOLDER || 2.0.0-rc.0 - 19.2.15
+  Depends on vulnerable versions of @angular/common
+  Depends on vulnerable versions of @angular/core
+  Depends on vulnerable versions of @angular/platform-browser
+  node_modules/@angular/router
+
+@angular/compiler  <=18.2.14
+Severity: high
+Angular Stored XSS Vulnerability via SVG Animation, SVG URL and MathML Attributes - https://github.com/advisories/GHSA-v4hv-rgfq-gp49
+Angular has XSS Vulnerability via Unsanitized SVG Script Attributes - https://github.com/advisories/GHSA-jrmj-c5cx-3cw6
+fix available via `npm audit fix --force`
+Will install @angular/compiler@19.2.20, which is a breaking change
+node_modules/@angular/compiler
+  @angular/compiler-cli  <=18.2.14
+  Depends on vulnerable versions of @angular/compiler
+  node_modules/@angular/compiler-cli
+    @angular-devkit/build-angular  <=20.3.18 || 21.0.0-next.0 - 21.2.0
+    Depends on vulnerable versions of @angular-devkit/architect
+    Depends on vulnerable versions of @angular-devkit/build-webpack
+    Depends on vulnerable versions of @angular-devkit/core
+    Depends on vulnerable versions of @angular/compiler-cli
+    Depends on vulnerable versions of @babel/runtime
+    Depends on vulnerable versions of @ngtools/webpack
+    Depends on vulnerable versions of cacache
+    Depends on vulnerable versions of copy-webpack-plugin
+    Depends on vulnerable versions of inquirer
+    Depends on vulnerable versions of postcss
+    Depends on vulnerable versions of resolve-url-loader
+    Depends on vulnerable versions of terser-webpack-plugin
+    Depends on vulnerable versions of webpack
+    Depends on vulnerable versions of webpack-dev-middleware
+    Depends on vulnerable versions of webpack-dev-server
+    node_modules/@angular-devkit/build-angular
+    @ngtools/webpack  <=1.2.13 || 6.0.0-beta.2 - 18.2.21
+    Depends on vulnerable versions of @angular-devkit/core
+    Depends on vulnerable versions of @angular/compiler-cli
+    node_modules/@ngtools/webpack
+
+@angular/core  <=18.2.14
+Severity: high
+Angular has XSS Vulnerability via Unsanitized SVG Script Attributes - https://github.com/advisories/GHSA-jrmj-c5cx-3cw6
+Angular i18n vulnerable to Cross-Site Scripting - https://github.com/advisories/GHSA-prjf-86w9-mfqv
+fix available via `npm audit fix --force`
+Will install @angular/core@19.2.20, which is a breaking change
+node_modules/@angular/core
+  @angular/animations  <=18.2.14
+  Depends on vulnerable versions of @angular/core
+  node_modules/@angular/animations
+
+@babel/runtime  <7.26.10
+Severity: moderate
+Babel has inefficient RegExp complexity in generated code with .replace when transpiling named capturing groups - https://github.com/advisories/GHSA-968p-4wvh-cqc8
+fix available via `npm audit fix --force`
+Will install @angular-devkit/build-angular@19.2.22, which is a breaking change
+node_modules/@babel/runtime
+
+@tootallnate/once  <3.0.1
+@tootallnate/once vulnerable to Incorrect Control Flow Scoping - https://github.com/advisories/GHSA-vpq2-c234-7xj6
+fix available via `npm audit fix --force`
+Will install @angular/cli@19.2.22, which is a breaking change
+node_modules/@tootallnate/once
+  http-proxy-agent  4.0.1 - 5.0.0
+  Depends on vulnerable versions of @tootallnate/once
+  node_modules/http-proxy-agent
+    make-fetch-happen  7.1.1 - 14.0.0
+    Depends on vulnerable versions of cacache
+    Depends on vulnerable versions of http-proxy-agent
+    node_modules/make-fetch-happen
+      npm-registry-fetch  7.0.1 - 14.0.5
+      Depends on vulnerable versions of make-fetch-happen
+      node_modules/npm-registry-fetch
+        pacote  5.0.0 - 19.0.1 || 20.0.0 || 21.0.0
+        Depends on vulnerable versions of @npmcli/run-script
+        Depends on vulnerable versions of cacache
+        Depends on vulnerable versions of npm-registry-fetch
+        Depends on vulnerable versions of tar
+        node_modules/pacote
+          @angular/cli  <=1.4.0-rc.2 || 1.5.6 || 1.6.4 - 20.3.14 || 21.0.0-next.0 - 21.0.0-rc.6
+          Depends on vulnerable versions of @angular-devkit/architect
+          Depends on vulnerable versions of @angular-devkit/core
+          Depends on vulnerable versions of @angular-devkit/schematics
+          Depends on vulnerable versions of @schematics/angular
+          Depends on vulnerable versions of @schematics/update
+          Depends on vulnerable versions of inquirer
+          Depends on vulnerable versions of pacote
+          Depends on vulnerable versions of universal-analytics
+          node_modules/@angular/cli
+          @schematics/update  *
+          Depends on vulnerable versions of @angular-devkit/core
+          Depends on vulnerable versions of @angular-devkit/schematics
+          Depends on vulnerable versions of pacote
+          node_modules/@schematics/update
+
+ajv  <6.14.0
+Severity: moderate
+ajv has ReDoS when using `$data` option - https://github.com/advisories/GHSA-2g4f-4pwh-qvx6
+fix available via `npm audit fix --force`
+Will install @angular-devkit/build-angular@19.2.22, which is a breaking change
+node_modules/@angular-devkit/core/node_modules/ajv
+  @angular-devkit/core  0.0.24 - 12.0.0-rc.3
+  Depends on vulnerable versions of ajv
+  node_modules/@angular-devkit/core
+    @angular-devkit/architect  <=0.1200.0-rc.3
+    Depends on vulnerable versions of @angular-devkit/core
+    node_modules/@angular-devkit/architect
+    @angular-devkit/build-webpack  <=0.1703.17
+    Depends on vulnerable versions of @angular-devkit/architect
+    Depends on vulnerable versions of @angular-devkit/core
+    Depends on vulnerable versions of webpack-dev-server
+    node_modules/@angular-devkit/build-webpack
+    @angular-devkit/schematics  0.0.43 - 12.0.0-rc.3
+    Depends on vulnerable versions of @angular-devkit/core
+    node_modules/@angular-devkit/schematics
+    @schematics/angular  0.1.12 - 12.0.0-rc.3
+    Depends on vulnerable versions of @angular-devkit/core
+    Depends on vulnerable versions of @angular-devkit/schematics
+    node_modules/@schematics/angular
+
+bl  <1.2.3
+Severity: moderate
+Remote Memory Exposure in bl - https://github.com/advisories/GHSA-pp7h-53gx-mx7r
+fix available via `npm audit fix --force`
+Will install protractor@7.0.0, which is a breaking change
+node_modules/request/node_modules/bl
+  request  *
+  Depends on vulnerable versions of bl
+  Depends on vulnerable versions of hawk
+  Depends on vulnerable versions of tunnel-agent
+  node_modules/node-gyp/node_modules/request
+  node_modules/request
+  node_modules/universal-analytics/node_modules/request
+    node-gyp  <=10.3.1
+    Depends on vulnerable versions of request
+    Depends on vulnerable versions of tar
+    node_modules/node-gyp
+      @npmcli/run-script  1.1.1 - 1.8.6
+      Depends on vulnerable versions of node-gyp
+      node_modules/@npmcli/run-script
+    protractor  0.23.0 - 5.4.4 || >=7.0.0
+    Depends on vulnerable versions of request
+    Depends on vulnerable versions of selenium-webdriver
+    node_modules/protractor
+    universal-analytics  <=0.4.23
+    Depends on vulnerable versions of request
+    node_modules/universal-analytics
+
+brace-expansion  1.0.0 - 1.1.11
+brace-expansion Regular Expression Denial of Service vulnerability - https://github.com/advisories/GHSA-v6h2-p8h4-qcjw
+fix available via `npm audit fix`
+node_modules/brace-expansion
+
+elliptic  *
+Elliptic Uses a Cryptographic Primitive with a Risky Implementation - https://github.com/advisories/GHSA-848j-6mx2-7j84
+fix available via `npm audit fix --force`
+Will install @angular-devkit/build-angular@19.2.22, which is a breaking change
+node_modules/elliptic
+  browserify-sign  >=2.4.0
+  Depends on vulnerable versions of elliptic
+  node_modules/browserify-sign
+    crypto-browserify  >=3.4.0
+    Depends on vulnerable versions of browserify-sign
+    Depends on vulnerable versions of create-ecdh
+    node_modules/crypto-browserify
+      node-libs-browser  0.4.2 || >=1.0.0
+      Depends on vulnerable versions of crypto-browserify
+      node_modules/node-libs-browser
+        webpack  2.0.0-beta - 5.1.0
+        Depends on vulnerable versions of node-libs-browser
+        Depends on vulnerable versions of terser-webpack-plugin
+        node_modules/webpack
+  create-ecdh  *
+  Depends on vulnerable versions of elliptic
+  node_modules/create-ecdh
+
+hawk  <=9.0.0
+Severity: high
+Uncontrolled Resource Consumption in Hawk - https://github.com/advisories/GHSA-44pw-h2cw-w3vq
+Depends on vulnerable versions of boom
+Depends on vulnerable versions of cryptiles
+Depends on vulnerable versions of hoek
+Depends on vulnerable versions of sntp
+fix available via `npm audit fix --force`
+Will install protractor@7.0.0, which is a breaking change
+node_modules/hawk
+
+hoek  *
+Severity: high
+hoek subject to prototype pollution via the clone function. - https://github.com/advisories/GHSA-c429-5p7v-vgjp
+fix available via `npm audit fix --force`
+Will install protractor@7.0.0, which is a breaking change
+node_modules/hoek
+  boom  *
+  Depends on vulnerable versions of hoek
+  node_modules/boom
+    cryptiles  *
+    Depends on vulnerable versions of boom
+    node_modules/cryptiles
+  sntp  0.0.0 || >=0.1.1
+  Depends on vulnerable versions of hoek
+  node_modules/sntp
+
+ip  *
+Severity: high
+ip SSRF improper categorization in isPublic - https://github.com/advisories/GHSA-2p57-rm9w-gvfp
+fix available via `npm audit fix --force`
+Will install @angular-devkit/build-angular@19.2.22, which is a breaking change
+node_modules/ip
+  webpack-dev-server  <=5.2.0
+  Depends on vulnerable versions of ip
+  Depends on vulnerable versions of webpack-dev-middleware
+  node_modules/webpack-dev-server
+
+postcss  <8.4.31
+Severity: moderate
+PostCSS line return parsing error - https://github.com/advisories/GHSA-7fh5-64p2-3v2j
+fix available via `npm audit fix --force`
+Will install @angular-devkit/build-angular@19.2.22, which is a breaking change
+node_modules/postcss
+node_modules/resolve-url-loader/node_modules/postcss
+  resolve-url-loader  0.0.1-experiment-postcss || 3.0.0-alpha.1 - 4.0.0
+  Depends on vulnerable versions of postcss
+  node_modules/resolve-url-loader
+
+
+serialize-javascript  <=7.0.2
+Severity: high
+Serialize JavaScript is Vulnerable to RCE via RegExp.flags and Date.prototype.toISOString() - https://github.com/advisories/GHSA-5c6j-r48x-rmvq
+fix available via `npm audit fix --force`
+Will install @angular-devkit/build-angular@19.2.22, which is a breaking change
+node_modules/serialize-javascript
+  copy-webpack-plugin  4.3.0 - 13.0.1
+  Depends on vulnerable versions of cacache
+  Depends on vulnerable versions of serialize-javascript
+  node_modules/copy-webpack-plugin
+  terser-webpack-plugin  <=5.3.16
+  Depends on vulnerable versions of cacache
+  Depends on vulnerable versions of serialize-javascript
+  node_modules/terser-webpack-plugin
+  node_modules/webpack/node_modules/terser-webpack-plugin
+
+tar  <=7.5.10
+Severity: high
+node-tar Vulnerable to Arbitrary File Creation/Overwrite via Hardlink Path Traversal - https://github.com/advisories/GHSA-34x7-hfp2-rc4v
+node-tar is Vulnerable to Arbitrary File Overwrite and Symlink Poisoning via Insufficient Path Sanitization - https://github.com/advisories/GHSA-8qq5-rm4j-mr97
+Arbitrary File Read/Write via Hardlink Target Escape Through Symlink Chain in node-tar Extraction - https://github.com/advisories/GHSA-83g3-92jg-28cx
+tar has Hardlink Path Traversal via Drive-Relative Linkpath - https://github.com/advisories/GHSA-qffp-2rhf-9h96
+node-tar Symlink Path Traversal via Drive-Relative Linkpath - https://github.com/advisories/GHSA-9ppj-qmqm-q256
+Race Condition in node-tar Path Reservations via Unicode Ligature Collisions on macOS APFS - https://github.com/advisories/GHSA-r6q2-hw4h-h46w
+fix available via `npm audit fix --force`
+Will install @angular/cli@19.2.22, which is a breaking change
+node_modules/tar
+  cacache  14.0.0 - 18.0.4
+  Depends on vulnerable versions of tar
+  node_modules/cacache
+
+tmp  <=0.2.3
+tmp allows arbitrary temporary file / directory write via symbolic link `dir` parameter - https://github.com/advisories/GHSA-52f5-9888-hmc6
+fix available via `npm audit fix --force`
+Will install protractor@7.0.0, which is a breaking change
+node_modules/selenium-webdriver/node_modules/tmp
+node_modules/tmp
+  external-editor  >=1.1.1
+  Depends on vulnerable versions of tmp
+  node_modules/external-editor
+    inquirer  3.0.0 - 8.2.6 || 9.0.0 - 9.3.7
+    Depends on vulnerable versions of external-editor
+    node_modules/inquirer
+  selenium-webdriver  2.43.1 - 4.0.0-rc-2
+  Depends on vulnerable versions of tmp
+  node_modules/selenium-webdriver
+
+tunnel-agent  <0.6.0
+Severity: moderate
+Memory Exposure in tunnel-agent - https://github.com/advisories/GHSA-xc7v-wxcw-j472
+fix available via `npm audit fix --force`
+Will install protractor@7.0.0, which is a breaking change
+node_modules/tunnel-agent
+
+webpack-dev-middleware  <=5.3.3
+Severity: high
+Path traversal in webpack-dev-middleware - https://github.com/advisories/GHSA-wr3j-pwj9-hqq6
+fix available via `npm audit fix --force`
+Will install @angular-devkit/build-angular@19.2.22, which is a breaking change
+node_modules/@angular-devkit/build-angular/node_modules/webpack-dev-middleware
+node_modules/webpack-dev-server/node_modules/webpack-dev-middleware
+
+
+58 vulnerabilities (13 low, 14 moderate, 31 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force

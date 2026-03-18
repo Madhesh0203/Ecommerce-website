@@ -10,15 +10,13 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <input type="search" class="form-control" id="code" (keyup)="searchByCode()" placeholder="Search by code"
+                <input type="search" class="form-control" id="code-search-input" (keyup)="searchByCode()" placeholder="Search by SKU code"
                     [(ngModel)]="editCode">
             </div>
             <div class="col-md-3">
                 <div class="btn-group w-100">
-                    <button type="button" class="btn btn-outline-primary" (click)="turnEditMode()"
-                        *ngIf="editId > -1"><i class="bi bi-pencil-square me-2"></i>Edit</button>
                     <button type="button" class="btn btn-outline-danger" (click)="removeProduct()"
-                        *ngIf="editId > -1"><i class="bi bi-trash me-2"></i>Delete</button>
+                        *ngIf="editId > -1"><i class="bi bi-trash me-2"></i>Delete Found</button>
                 </div>
             </div>
         </div>
@@ -27,22 +25,27 @@
     <!-- Products Grid -->
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 my-4">
         <div class="col" *ngFor="let p of filtered; let id = index">
-            <div class="card h-100 border-0 shadow-sm hover-lift">
-                <div class="position-relative overflow-hidden">
+            <div class="card h-100 border-0 shadow-sm hover-lift overflow-hidden">
+                <div class="position-relative">
                     <img [src]="p.url || 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=400&q=80'" 
-                         class="card-img-top" alt="{{p.name}}">
-                    <div class="badge bg-primary position-absolute top-0 end-0 m-3 shadow-sm">${{p.price}}</div>
-                </div>
-                <div class="card-body d-flex flex-column justify-content-between">
-                    <div>
-                        <h5 class="card-title fw-bold text-truncate">{{p.name}}</h5>
-                        <p class="card-text text-muted small text-truncate-2">{{p.description}}</p>
+                         class="card-img-top" alt="{{p.name}}" style="height: 200px; object-fit: cover;">
+                    <div class="badge bg-primary position-absolute top-0 end-0 m-3 shadow-sm">$ {{p.price | number:'1.2-2'}}</div>
+                    
+                    <!-- Action Overlay -->
+                    <div class="product-overlay position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-50 opacity-0 transition-all text-center">
+                        <button class="btn btn-sm btn-light rounded-pill px-3" (click)="editCode = p.code; findByCode(); turnEditMode()">
+                            <i class="bi bi-pencil me-1"></i>Edit
+                        </button>
                     </div>
-                    <div class="mt-3">
-                        <div class="d-grid gap-2">
-                            <a [routerLink]="['/product', p.code]" class="btn btn-outline-secondary btn-sm rounded-pill">View Details</a>
-                            <button type="button" class="btn btn-success btn-sm rounded-pill" (click)="addToCart()">Add to Cart</button>
-                        </div>
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold text-truncate mb-2">{{p.name}}</h5>
+                    <p class="card-text text-muted small mb-4 flex-grow-1" style="display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                        {{p.description}}
+                    </p>
+                    <div class="d-grid gap-2">
+                        <a [routerLink]="['/product', p.code]" class="btn btn-outline-primary btn-sm rounded-pill">View Details</a>
+                        <button type="button" class="btn btn-success btn-sm rounded-pill" (click)="addToCart(p.code)">Add to Cart</button>
                     </div>
                 </div>
                 <div class="card-footer bg-transparent border-0 text-center pb-3">
@@ -55,57 +58,53 @@
     <!-- Add/Edit Product Form -->
     <div class="glass-panel p-5 mt-5 mb-5 shadow-lg border-primary border-opacity-25 animate__animated animate__slideInUp">
         <div class="text-center mb-4">
-            <h3 class="fw-bold" *ngIf="!editMode">Add New Product</h3>
-            <h3 class="fw-bold text-primary" *ngIf="editMode">Edit Product</h3>
-            <p class="text-muted">Fill in the details below to update your inventory.</p>
+            <h3 class="fw-bold" *ngIf="!editMode">Add New Experience</h3>
+            <h3 class="fw-bold text-primary" *ngIf="editMode">Edit Experience</h3>
+            <p class="text-muted">Fill in the details below to update your premium selection.</p>
         </div>
 
         <form class="form" [formGroup]="form">
             <div class="row g-4">
                 <div class="col-md-6">
-                    <label for="code" class="form-label fw-semibold">Product Code</label>
-                    <input type="text" name="code" class="form-control" formControlName="code" placeholder="e.g. LAP-001">
-                    <div *ngIf="code.invalid && (code.dirty || code.touched)" class="invalid-feedback">
-                        <span *ngIf="code.errors.required">Code is required</span>
-                        <span *ngIf="code.errors.minlength">Minimum 3 characters</span>
+                    <label class="form-label fw-semibold">Product SKU</label>
+                    <input type="text" class="form-control" formControlName="code" [class.is-invalid]="code.invalid && (code.dirty || code.touched)" placeholder="e.g. LAP-001">
+                    <div class="invalid-feedback" *ngIf="code.invalid && (code.dirty || code.touched)">
+                        SKU is required (min 3 chars).
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <label for="name" class="form-label fw-semibold">Product Name</label>
-                    <input type="text" name="name" class="form-control" formControlName="name" placeholder="e.g. High-End Laptop">
-                    <div *ngIf="name.invalid && (name.dirty || name.touched)" class="invalid-feedback">
-                        <span *ngIf="name.errors.required">Name is required</span>
-                        <span *ngIf="name.errors.minlength">Minimum 3 characters</span>
+                    <label class="form-label fw-semibold">Experience Name</label>
+                    <input type="text" class="form-control" formControlName="name" [class.is-invalid]="name.invalid && (name.dirty || name.touched)" placeholder="e.g. High-End Laptop">
+                    <div class="invalid-feedback" *ngIf="name.invalid && (name.dirty || name.touched)">
+                        Name is required (min 3 chars).
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <label for="price" class="form-label fw-semibold">Price ($)</label>
-                    <input type="number" name="price" class="form-control" formControlName="price" min="1" placeholder="0.00">
-                    <div *ngIf="price.invalid && (price.dirty || price.touched)" class="invalid-feedback">
-                        <span *ngIf="price.errors.required">Price is required</span>
-                        <span *ngIf="price.errors.min">Must be greater than 0</span>
+                    <label class="form-label fw-semibold">Price ($)</label>
+                    <input type="number" class="form-control" formControlName="price" [class.is-invalid]="price.invalid && (price.dirty || price.touched)" placeholder="0.00">
+                    <div class="invalid-feedback" *ngIf="price.invalid && (price.dirty || price.touched)">
+                        A valid price greater than 1 is required.
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <label for="url" class="form-label fw-semibold">Image URL (Optional)</label>
-                    <input type="text" name="url" class="form-control" formControlName="url" placeholder="https://...">
+                    <label class="form-label fw-semibold">Hero Image URL</label>
+                    <input type="text" class="form-control" formControlName="url" placeholder="https://...">
                 </div>
                 <div class="col-12">
-                    <label for="description" class="form-label fw-semibold">Description</label>
-                    <textarea name="description" class="form-control" formControlName="description" rows="3" placeholder="Tell us about the product..."></textarea>
-                    <div *ngIf="description.invalid && (description.dirty || description.touched)" class="invalid-feedback">
-                        <span *ngIf="description.errors.required">Description is required</span>
-                        <span *ngIf="description.errors.minlength">Minimum 3 characters</span>
+                    <label class="form-label fw-semibold">Detailed Description</label>
+                    <textarea class="form-control" formControlName="description" [class.is-invalid]="description.invalid && (description.dirty || description.touched)" rows="3" placeholder="Describe the experience..."></textarea>
+                    <div class="invalid-feedback" *ngIf="description.invalid && (description.dirty || description.touched)">
+                        Description is required (min 3 chars).
                     </div>
                 </div>
-                <div class="col-12 mt-4">
-                    <button *ngIf="!editMode" type="button" class="btn btn-success btn-lg w-100 shadow-sm" (click)="addProduct()">
-                        <i class="bi bi-plus-circle me-2"></i>Save Product
+                <div class="col-12 mt-4 text-center">
+                    <button *ngIf="!editMode" type="button" class="btn btn-success btn-lg px-5 rounded-pill shadow-sm" (click)="addProduct()">
+                        <i class="bi bi-plus-circle me-2"></i>Save New Experience
                     </button>
-                    <button *ngIf="editMode" type="button" class="btn btn-primary btn-lg w-100 shadow-sm" (click)="editProduct()">
-                        <i class="bi bi-check-circle me-2"></i>Update Product
+                    <button *ngIf="editMode" type="button" class="btn btn-primary btn-lg px-5 rounded-pill shadow-sm" (click)="editProduct()">
+                        <i class="bi bi-check-circle me-2"></i>Apply Changes
                     </button>
-                    <button *ngIf="editMode" type="button" class="btn btn-link w-100 mt-2 text-muted" (click)="editMode = false; form.reset()">Cancel</button>
+                    <button *ngIf="editMode" type="button" class="btn btn-link w-100 mt-2 text-muted" (click)="editMode = false; form.reset()">Discard Edits</button>
                 </div>
             </div>
         </form>

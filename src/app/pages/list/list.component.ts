@@ -20,7 +20,10 @@ export class ListComponent implements OnInit {
     this.quantity = this.products.map(p => {
       const qty = this.cart[p.code];
       if (!qty) { return 0; }
-      else { return qty; }
+      else { 
+        this.total += p.price * qty;
+        return qty; 
+      }
     });
   }
 

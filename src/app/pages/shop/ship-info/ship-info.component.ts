@@ -52,6 +52,7 @@ export class ShipInfoComponent implements OnInit {
 
   checkCardForm(): void {
     if (this.cardForm.valid) {
+      alert('Order placed successfully! Thank you for your purchase.');
       this.router.navigate(['/home']);
     }
     else { alert('Please enter all payment details.'); }
