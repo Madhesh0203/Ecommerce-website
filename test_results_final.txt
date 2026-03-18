@@ -1,0 +1,48 @@
+npm warn Unknown cli config "--watch". This will stop working in the next major version of npm.
+
+> ecommerce@0.0.0 test
+> set NODE_OPTIONS=--openssl-legacy-provider && ng test
+
+18 03 2026 16:23:23.761:WARN [karma-server]: Passing raw CLI options to `new Server(config, done)` is deprecated. Use `parseConfig(configFilePath, cliOptions, {promiseConfig: true, throwErrors: true})` to prepare a processed `Config` instance and pass that as the `config` argument instead.
+- Generating browser application bundles...
+18 03 2026 16:23:25.961:WARN [karma]: No captured browser, open http://localhost:9878/
+18 03 2026 16:23:25.964:INFO [karma-server]: Karma v6.4.2 server started at http://localhost:9878/
+18 03 2026 16:23:25.965:INFO [launcher]: Launching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+18 03 2026 16:23:25.970:INFO [launcher]: Starting browser ChromeHeadless
+Γ£ö Browser application bundle generation complete.
+18 03 2026 16:23:29.510:WARN [karma]: No captured browser, open http://localhost:9878/
+18 03 2026 16:23:31.285:INFO [Chrome Headless 146.0.0.0 (Windows 10)]: Connected on socket f_nRuo-RqZWyweQrAAAB with id 40610656
+Chrome Headless 146.0.0.0 (Windows 10): Executed 0 of 10[32m SUCCESS[39m (0 secs / 0 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 1 of 10[32m SUCCESS[39m (0 secs / 0.069 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 2 of 10[32m SUCCESS[39m (0 secs / 0.081 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 3 of 10[32m SUCCESS[39m (0 secs / 0.085 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 4 of 10[32m SUCCESS[39m (0 secs / 0.088 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 5 of 10[32m SUCCESS[39m (0 secs / 0.103 secs)
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 5 of 10[32m SUCCESS[39m (0 secs / 0.103 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 5 of 10[32m SUCCESS[39m (0 secs / 0.103 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 6 of 10[32m SUCCESS[39m (0 secs / 0.119 secs)
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 6 of 10[32m SUCCESS[39m (0 secs / 0.119 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 6 of 10[32m SUCCESS[39m (0 secs / 0.119 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 6 of 10[32m SUCCESS[39m (0 secs / 0.119 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 6 of 10[32m SUCCESS[39m (0 secs / 0.119 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 7 of 10[32m SUCCESS[39m (0 secs / 0.126 secs)
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 7 of 10[32m SUCCESS[39m (0 secs / 0.126 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 8 of 10[32m SUCCESS[39m (0 secs / 0.131 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 9 of 10[32m SUCCESS[39m (0 secs / 0.135 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 10 of 10[32m SUCCESS[39m (0 secs / 0.136 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 10 of 10[32m SUCCESS[39m (0.275 secs / 0.136 secs)
+[32mTOTAL: 10 SUCCESS[39m

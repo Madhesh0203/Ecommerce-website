@@ -1,0 +1,293 @@
+npm warn Unknown cli config "--watch". This will stop working in the next major version of npm.
+
+> ecommerce@0.0.0 test
+> set NODE_OPTIONS=--openssl-legacy-provider && ng test
+
+18 03 2026 16:20:33.605:WARN [karma-server]: Passing raw CLI options to `new Server(config, done)` is deprecated. Use `parseConfig(configFilePath, cliOptions, {promiseConfig: true, throwErrors: true})` to prepare a processed `Config` instance and pass that as the `config` argument instead.
+- Generating browser application bundles...
+18 03 2026 16:20:36.111:WARN [karma]: No captured browser, open http://localhost:9877/
+18 03 2026 16:20:36.114:INFO [karma-server]: Karma v6.4.2 server started at http://localhost:9877/
+18 03 2026 16:20:36.114:INFO [launcher]: Launching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+18 03 2026 16:20:36.118:INFO [launcher]: Starting browser ChromeHeadless
+Γ£ö Browser application bundle generation complete.
+18 03 2026 16:20:40.020:WARN [karma]: No captured browser, open http://localhost:9877/
+18 03 2026 16:20:41.919:INFO [Chrome Headless 146.0.0.0 (Windows 10)]: Connected on socket ry1OJq0VxzgW8ENaAAAB with id 36000974
+Chrome Headless 146.0.0.0 (Windows 10): Executed 0 of 11[32m SUCCESS[39m (0 secs / 0 secs)
+[1A[2KERROR: [36m'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 0 of 11[32m SUCCESS[39m (0 secs / 0 secs)
+ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+[1A[2KERROR: [36m'NG0304: 'app-footer' is not a known element:
+1. If 'app-footer' is an Angular component, then verify that it is part of this module.
+2. If 'app-footer' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 0 of 11[32m SUCCESS[39m (0 secs / 0 secs)
+ERROR: 'NG0304: 'app-footer' is not a known element:
+1. If 'app-footer' is an Angular component, then verify that it is part of this module.
+2. If 'app-footer' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+[1A[2KERROR: [36m'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 0 of 11[32m SUCCESS[39m (0 secs / 0 secs)
+ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+[1A[2KERROR: [36m'NG0304: 'app-footer' is not a known element:
+1. If 'app-footer' is an Angular component, then verify that it is part of this module.
+2. If 'app-footer' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 0 of 11[32m SUCCESS[39m (0 secs / 0 secs)
+ERROR: 'NG0304: 'app-footer' is not a known element:
+1. If 'app-footer' is an Angular component, then verify that it is part of this module.
+2. If 'app-footer' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+[1A[2KERROR: [36m'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 0 of 11[32m SUCCESS[39m (0 secs / 0 secs)
+ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+[1A[2KERROR: [36m'NG0304: 'app-footer' is not a known element:
+1. If 'app-footer' is an Angular component, then verify that it is part of this module.
+2. If 'app-footer' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 0 of 11[32m SUCCESS[39m (0 secs / 0 secs)
+ERROR: 'NG0304: 'app-footer' is not a known element:
+1. If 'app-footer' is an Angular component, then verify that it is part of this module.
+2. If 'app-footer' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 0 of 11[32m SUCCESS[39m (0 secs / 0 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 1 of 11[32m SUCCESS[39m (0 secs / 0.029 secs)
+[1A[2K[31mChrome Headless 146.0.0.0 (Windows 10) AppComponent should render title FAILED[39m
+	TypeError: Cannot read properties of null (reading 'textContent')
+	    at UserContext.<anonymous> (src/app/app.component.spec.ts:33:51)
+	    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+	    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+	    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:371:1)
+	    at Zone.run (node_modules/zone.js/dist/zone-evergreen.js:134:1)
+	    at runInTestZone (node_modules/zone.js/dist/zone-testing.js:581:1)
+	    at UserContext.<anonymous> (node_modules/zone.js/dist/zone-testing.js:596:1)
+	    at <Jasmine>
+Chrome Headless 146.0.0.0 (Windows 10): Executed 2 of 11[31m (1 FAILED)[39m (0 secs / 0.08 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 3 of 11[31m (1 FAILED)[39m (0 secs / 0.083 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 4 of 11[31m (1 FAILED)[39m (0 secs / 0.094 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 5 of 11[31m (1 FAILED)[39m (0 secs / 0.146 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 6 of 11[31m (1 FAILED)[39m (0 secs / 0.153 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 7 of 11[31m (1 FAILED)[39m (0 secs / 0.155 secs)
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 7 of 11[31m (1 FAILED)[39m (0 secs / 0.155 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 7 of 11[31m (1 FAILED)[39m (0 secs / 0.155 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 8 of 11[31m (1 FAILED)[39m (0 secs / 0.17 secs)
+[1A[2K[31mChrome Headless 146.0.0.0 (Windows 10) ProductComponent should create FAILED[39m
+	NullInjectorError: R3InjectorError(DynamicTestModule)[ActivatedRoute -> ActivatedRoute]: 
+	  NullInjectorError: No provider for ActivatedRoute!
+	error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ActivatedRoute', 'ActivatedRoute' ] })
+	NullInjectorError: R3InjectorError(DynamicTestModule)[ActivatedRoute -> ActivatedRoute]: 
+	  NullInjectorError: No provider for ActivatedRoute!
+	    at NullInjector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11116:1)
+	    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11283:1)
+	    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11283:1)
+	    at NgModuleRef$1.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25337:1)
+	    at Object.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25051:1)
+	    at lookupTokenUsingModuleInjector (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3389:1)
+	    at getOrCreateInjectable (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3501:1)
+	    at ╔╡╔╡directiveInject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:14707:1)
+	    at NodeInjectorFactory.ProductComponent_Factory [as factory] (ng:///ProductComponent/╔╡fac.js:5:7)
+	    at getNodeInjectable (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3596:1)
+	Error: Expected undefined to be truthy.
+	    at <Jasmine>
+	    at UserContext.<anonymous> (src/app/pages/product/product.component.spec.ts:23:23)
+	    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+	    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+Chrome Headless 146.0.0.0 (Windows 10): Executed 9 of 11[31m (2 FAILED)[39m (0 secs / 0.181 secs)
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 9 of 11[31m (2 FAILED)[39m (0 secs / 0.181 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 9 of 11[31m (2 FAILED)[39m (0 secs / 0.181 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 9 of 11[31m (2 FAILED)[39m (0 secs / 0.181 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 9 of 11[31m (2 FAILED)[39m (0 secs / 0.181 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 10 of 11[31m (2 FAILED)[39m (0 secs / 0.186 secs)
+[1A[2K[31mChrome Headless 146.0.0.0 (Windows 10) ShipInfoComponent should create FAILED[39m
+	NullInjectorError: R3InjectorError(DynamicTestModule)[Router -> Router]: 
+	  NullInjectorError: No provider for Router!
+	error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'Router', 'Router' ] })
+	NullInjectorError: R3InjectorError(DynamicTestModule)[Router -> Router]: 
+	  NullInjectorError: No provider for Router!
+	    at NullInjector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11116:1)
+	    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11283:1)
+	    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11283:1)
+	    at NgModuleRef$1.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25337:1)
+	    at Object.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25051:1)
+	    at lookupTokenUsingModuleInjector (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3389:1)
+	    at getOrCreateInjectable (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3501:1)
+	    at ╔╡╔╡directiveInject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:14707:1)
+	    at NodeInjectorFactory.ShipInfoComponent_Factory [as factory] (ng:///ShipInfoComponent/╔╡fac.js:4:45)
+	    at getNodeInjectable (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3596:1)
+	Error: Expected undefined to be truthy.
+	    at <Jasmine>
+	    at UserContext.<anonymous> (src/app/pages/shop/ship-info/ship-info.component.spec.ts:23:23)
+	    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+	    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+Chrome Headless 146.0.0.0 (Windows 10): Executed 11 of 11[31m (3 FAILED)[39m (0 secs / 0.199 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 11 of 11[31m (3 FAILED)[39m (0.319 secs / 0.199 secs)
+[31mTOTAL: 3 FAILED, 8 SUCCESS[39m
+- Generating browser application bundles...
+Γ£ö Browser application bundle generation complete.
+Chrome Headless 146.0.0.0 (Windows 10): Executed 0 of 10[32m SUCCESS[39m (0 secs / 0 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 1 of 10[32m SUCCESS[39m (0 secs / 0.012 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 2 of 10[32m SUCCESS[39m (0 secs / 0.016 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 3 of 10[32m SUCCESS[39m (0 secs / 0.018 secs)
+[1A[2K[31mChrome Headless 146.0.0.0 (Windows 10) ShipInfoComponent should create FAILED[39m
+	NullInjectorError: R3InjectorError(DynamicTestModule)[Router -> Router]: 
+	  NullInjectorError: No provider for Router!
+	error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'Router', 'Router' ] })
+	NullInjectorError: R3InjectorError(DynamicTestModule)[Router -> Router]: 
+	  NullInjectorError: No provider for Router!
+	    at NullInjector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11116:1)
+	    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11283:1)
+	    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11283:1)
+	    at NgModuleRef$1.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25337:1)
+	    at Object.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25051:1)
+	    at lookupTokenUsingModuleInjector (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3389:1)
+	    at getOrCreateInjectable (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3501:1)
+	    at ╔╡╔╡directiveInject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:14707:1)
+	    at NodeInjectorFactory.ShipInfoComponent_Factory [as factory] (ng:///ShipInfoComponent/╔╡fac.js:4:45)
+	    at getNodeInjectable (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3596:1)
+	Error: Expected undefined to be truthy.
+	    at <Jasmine>
+	    at UserContext.<anonymous> (src/app/pages/shop/ship-info/ship-info.component.spec.ts:23:23)
+	    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+	    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+Chrome Headless 146.0.0.0 (Windows 10): Executed 4 of 10[31m (1 FAILED)[39m (0 secs / 0.099 secs)
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 4 of 10[31m (1 FAILED)[39m (0 secs / 0.099 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 4 of 10[31m (1 FAILED)[39m (0 secs / 0.099 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 4 of 10[31m (1 FAILED)[39m (0 secs / 0.099 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 4 of 10[31m (1 FAILED)[39m (0 secs / 0.099 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 5 of 10[31m (1 FAILED)[39m (0 secs / 0.107 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 6 of 10[31m (1 FAILED)[39m (0 secs / 0.113 secs)
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 6 of 10[31m (1 FAILED)[39m (0 secs / 0.113 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 6 of 10[31m (1 FAILED)[39m (0 secs / 0.113 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 7 of 10[31m (1 FAILED)[39m (0 secs / 0.13 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 8 of 10[31m (1 FAILED)[39m (0 secs / 0.159 secs)
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 8 of 10[31m (1 FAILED)[39m (0 secs / 0.159 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 9 of 10[31m (1 FAILED)[39m (0 secs / 0.167 secs)
+[1A[2K[31mChrome Headless 146.0.0.0 (Windows 10) ProductComponent should create FAILED[39m
+	NullInjectorError: R3InjectorError(DynamicTestModule)[ActivatedRoute -> ActivatedRoute]: 
+	  NullInjectorError: No provider for ActivatedRoute!
+	error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ActivatedRoute', 'ActivatedRoute' ] })
+	NullInjectorError: R3InjectorError(DynamicTestModule)[ActivatedRoute -> ActivatedRoute]: 
+	  NullInjectorError: No provider for ActivatedRoute!
+	    at NullInjector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11116:1)
+	    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11283:1)
+	    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11283:1)
+	    at NgModuleRef$1.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25337:1)
+	    at Object.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25051:1)
+	    at lookupTokenUsingModuleInjector (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3389:1)
+	    at getOrCreateInjectable (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3501:1)
+	    at ╔╡╔╡directiveInject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:14707:1)
+	    at NodeInjectorFactory.ProductComponent_Factory [as factory] (ng:///ProductComponent/╔╡fac.js:5:7)
+	    at getNodeInjectable (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3596:1)
+	Error: Expected undefined to be truthy.
+	    at <Jasmine>
+	    at UserContext.<anonymous> (src/app/pages/product/product.component.spec.ts:23:23)
+	    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+	    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+Chrome Headless 146.0.0.0 (Windows 10): Executed 10 of 10[31m (2 FAILED)[39m (0 secs / 0.175 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 10 of 10[31m (2 FAILED)[39m (0.21 secs / 0.175 secs)
+[31mTOTAL: 2 FAILED, 8 SUCCESS[39m
+- Generating browser application bundles...
+Γ£ö Browser application bundle generation complete.
+Chrome Headless 146.0.0.0 (Windows 10): Executed 0 of 10[32m SUCCESS[39m (0 secs / 0 secs)
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 0 of 10[32m SUCCESS[39m (0 secs / 0 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 1 of 10[32m SUCCESS[39m (0 secs / 0.026 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 2 of 10[32m SUCCESS[39m (0 secs / 0.034 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 3 of 10[32m SUCCESS[39m (0 secs / 0.038 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 4 of 10[32m SUCCESS[39m (0 secs / 0.049 secs)
+- Generating browser application bundles...
+Γ£ö Browser application bundle generation complete.
+18 03 2026 16:22:12.861:INFO [karma]: Delaying execution, these browsers are not ready: Chrome Headless 146.0.0.0 (Windows 10)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 4 of 10[32m SUCCESS[39m (0.503 secs / 0.049 secs)
+[32mTOTAL: 4 SUCCESS[39m
+18 03 2026 16:22:13.048:WARN [Chrome Headless 146.0.0.0 (Windows 10)]: Adapter did not report total number of specs.
+Chrome Headless 146.0.0.0 (Windows 10): Executed 0 of null[32m SUCCESS[39m (0 secs / 0 secs)
+[1A[2K[31mChrome Headless 146.0.0.0 (Windows 10) ShipInfoComponent should create FAILED[39m
+	NullInjectorError: R3InjectorError(DynamicTestModule)[Router -> Router]: 
+	  NullInjectorError: No provider for Router!
+	error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'Router', 'Router' ] })
+	NullInjectorError: R3InjectorError(DynamicTestModule)[Router -> Router]: 
+	  NullInjectorError: No provider for Router!
+	    at NullInjector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11116:1)
+	    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11283:1)
+	    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11283:1)
+	    at NgModuleRef$1.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25337:1)
+	    at Object.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25051:1)
+	    at lookupTokenUsingModuleInjector (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3389:1)
+	    at getOrCreateInjectable (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3501:1)
+	    at ╔╡╔╡directiveInject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:14707:1)
+	    at NodeInjectorFactory.ShipInfoComponent_Factory [as factory] (ng:///ShipInfoComponent/╔╡fac.js:4:45)
+	    at getNodeInjectable (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3596:1)
+	Error: Expected undefined to be truthy.
+	    at <Jasmine>
+	    at UserContext.<anonymous> (src/app/pages/shop/ship-info/ship-info.component.spec.ts:23:23)
+	    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+	    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+Chrome Headless 146.0.0.0 (Windows 10): Executed 1 of null[31m (1 FAILED)[39m (0 secs / 0.022 secs)
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 1 of 10[31m (1 FAILED)[39m (0 secs / 0.022 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 2 of 10[31m (1 FAILED)[39m (0 secs / 0.043 secs)
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 2 of 10[31m (1 FAILED)[39m (0 secs / 0.043 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 2 of 10[31m (1 FAILED)[39m (0 secs / 0.043 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 3 of 10[31m (1 FAILED)[39m (0 secs / 0.066 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 4 of 10[31m (1 FAILED)[39m (0 secs / 0.068 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 5 of 10[31m (1 FAILED)[39m (0 secs / 0.097 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 6 of 10[31m (1 FAILED)[39m (0 secs / 0.109 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 7 of 10[31m (1 FAILED)[39m (0 secs / 0.137 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 8 of 10[31m (1 FAILED)[39m (0 secs / 0.143 secs)
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 8 of 10[31m (1 FAILED)[39m (0 secs / 0.143 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 8 of 10[31m (1 FAILED)[39m (0 secs / 0.143 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 8 of 10[31m (1 FAILED)[39m (0 secs / 0.143 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KERROR: [36m'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'[39m
+Chrome Headless 146.0.0.0 (Windows 10): Executed 8 of 10[31m (1 FAILED)[39m (0 secs / 0.143 secs)
+ERROR: 'NG0303: Can't bind to 'routerLink' since it isn't a known property of 'a'.'
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 9 of 10[31m (1 FAILED)[39m (0 secs / 0.15 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 10 of 10[31m (1 FAILED)[39m (0 secs / 0.153 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 11 of 10[31m (1 FAILED)[39m (0 secs / 0.156 secs)
+[1A[2KChrome Headless 146.0.0.0 (Windows 10): Executed 11 of 10[31m (1 FAILED)[39m (1.639 secs / 0.156 secs)
+[31mTOTAL: 1 FAILED, 10 SUCCESS[39m
