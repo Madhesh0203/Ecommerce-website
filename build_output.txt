@@ -1,0 +1,13 @@
+
+> ecommerce@0.0.0 build
+> ng build
+
+Node.js version v23.11.1 detected.
+Odd numbered Node.js versions will not enter LTS status and should not be used for production. For more information, please see https://nodejs.org/en/about/previous-releases/.
+Workspace extension with invalid name (defaultProject) found.
+This version of CLI is only compatible with Angular versions ^16.0.0,
+but Angular version 11.2.14 was found instead.
+
+Please visit the link below to find instructions on how to update Angular.
+https://update.angular.io/
+

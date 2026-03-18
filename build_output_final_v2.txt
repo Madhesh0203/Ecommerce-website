@@ -1,0 +1,23 @@
+
+> ecommerce@0.0.0 build
+> set NODE_OPTIONS=--openssl-legacy-provider && ng build
+
+- Generating browser application bundles...
+(node:13184) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Γ£ö Browser application bundle generation complete.
+- Copying assets...
+Γ£ö Copying assets complete.
+- Generating index html...
+Γ£ö Index html generation complete.
+
+Initial Chunk Files | Names         |      Size
+vendor.js           | vendor        |   2.65 MB
+polyfills.js        | polyfills     | 128.84 kB
+main.js             | main          | 122.41 kB
+runtime.js          | runtime       |   6.15 kB
+styles.css          | styles        | 268 bytes
+
+| Initial Total |   2.90 MB
+
+Build at: 2026-03-18T08:39:27.134Z - Hash: 7600cd610f5c249c384b - Time: 3816ms

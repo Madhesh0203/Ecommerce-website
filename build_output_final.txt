@@ -1,0 +1,41 @@
+
+> ecommerce@0.0.0 build
+> ng build
+
+Compiling @angular/core : es2015 as esm2015
+Compiling @angular/common : es2015 as esm2015
+Compiling @angular/platform-browser : es2015 as esm2015
+Compiling @angular/router : es2015 as esm2015
+Compiling @angular/platform-browser-dynamic : es2015 as esm2015
+Compiling @angular/forms : es2015 as esm2015
+- Generating browser application bundles...
+(node:29568) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+node:internal/crypto/hash:79
+  this[kHandle] = new _Hash(algorithm, xofLen, algorithmId, getHashCache());
+                  ^
+
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:79:19)
+    at Object.createHash (node:crypto:139:10)
+    at module.exports (C:\Users\Madheshwaran\Documents\Ecommerce-website\Ecommerce-website\node_modules\webpack\lib\util\createHash.js:135:53)
+    at NormalModule._initBuildHash (C:\Users\Madheshwaran\Documents\Ecommerce-website\Ecommerce-website\node_modules\webpack\lib\NormalModule.js:417:16)
+    at handleParseError (C:\Users\Madheshwaran\Documents\Ecommerce-website\Ecommerce-website\node_modules\webpack\lib\NormalModule.js:471:10)
+    at C:\Users\Madheshwaran\Documents\Ecommerce-website\Ecommerce-website\node_modules\webpack\lib\NormalModule.js:503:5
+    at C:\Users\Madheshwaran\Documents\Ecommerce-website\Ecommerce-website\node_modules\webpack\lib\NormalModule.js:358:12
+    at C:\Users\Madheshwaran\Documents\Ecommerce-website\Ecommerce-website\node_modules\loader-runner\lib\LoaderRunner.js:373:3
+    at iterateNormalLoaders (C:\Users\Madheshwaran\Documents\Ecommerce-website\Ecommerce-website\node_modules\loader-runner\lib\LoaderRunner.js:214:10)
+    at iterateNormalLoaders (C:\Users\Madheshwaran\Documents\Ecommerce-website\Ecommerce-website\node_modules\loader-runner\lib\LoaderRunner.js:221:10)
+    at C:\Users\Madheshwaran\Documents\Ecommerce-website\Ecommerce-website\node_modules\loader-runner\lib\LoaderRunner.js:236:3
+    at context.callback (C:\Users\Madheshwaran\Documents\Ecommerce-website\Ecommerce-website\node_modules\loader-runner\lib\LoaderRunner.js:111:13)
+    at Object.loader (C:\Users\Madheshwaran\Documents\Ecommerce-website\Ecommerce-website\node_modules\css-loader\dist\index.js:183:3) {
+  opensslErrorStack: [
+    'error:03000086:digital envelope routines::initialization error',
+    'error:0308010C:digital envelope routines::unsupported'
+  ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+}
+
+Node.js v23.11.1
