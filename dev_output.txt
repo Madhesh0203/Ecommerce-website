@@ -2,7 +2,6 @@
 > ecommerce@0.0.0 dev
 > npm start
 
-
 > ecommerce@0.0.0 start
 > set NODE_OPTIONS=--openssl-legacy-provider && ng serve
 

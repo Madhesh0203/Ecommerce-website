@@ -2,6 +2,11 @@
     background-color: rgb(33, 199, 0);
 }
 
-.nav-link{
-    color: white;
+.navbar-brand, .nav-link {
+    color: var(--dark) !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--primary) !important;
 }

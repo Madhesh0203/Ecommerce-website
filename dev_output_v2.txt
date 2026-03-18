@@ -24,5 +24,6 @@ Build at: 2026-03-18T08:46:34.824Z - Hash: 28b197ff6944e32863bc - Time: 6872ms
 
 ** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
 
+http://localhost:4200
 
 ΓêÜ Compiled successfully.
