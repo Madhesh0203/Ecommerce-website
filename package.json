@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng",
-    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng serve",
+    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng serve --open",
     "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng build",
     "dev": "npm start",
     "test": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng test",
