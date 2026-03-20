@@ -2,13 +2,13 @@
   "name": "ecommerce",
   "version": "0.0.0",
   "scripts": {
-    "ng": "set NODE_OPTIONS=--openssl-legacy-provider && ng",
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && ng build",
+    "ng": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng",
+    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng serve",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng build",
     "dev": "npm start",
-    "test": "set NODE_OPTIONS=--openssl-legacy-provider && ng test",
-    "lint": "set NODE_OPTIONS=--openssl-legacy-provider && ng lint",
-    "e2e": "set NODE_OPTIONS=--openssl-legacy-provider && ng e2e"
+    "test": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng test",
+    "lint": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng lint",
+    "e2e": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng e2e"
   },
   "private": true,
   "overrides": {
@@ -58,6 +58,7 @@
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^0.0.28",
+    "cross-env": "^7.0.3",
     "grunt": "^1.6.1",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
