@@ -1,0 +1,62 @@
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@angular-devkit/architect@0.1102.19',
+npm warn EBADENGINE   required: { node: '>= 10.13.0', npm: '^6.11.0 || ^7.5.6', yarn: '>= 1.13.0' },
+npm warn EBADENGINE   current: { node: 'v23.11.1', npm: '11.9.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@angular-devkit/build-angular@0.1102.19',
+npm warn EBADENGINE   required: { node: '>= 10.13.0', npm: '^6.11.0 || ^7.5.6', yarn: '>= 1.13.0' },
+npm warn EBADENGINE   current: { node: 'v23.11.1', npm: '11.9.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@angular-devkit/build-optimizer@0.1102.19',
+npm warn EBADENGINE   required: { node: '>= 10.13.0', npm: '^6.11.0 || ^7.5.6', yarn: '>= 1.13.0' },
+npm warn EBADENGINE   current: { node: 'v23.11.1', npm: '11.9.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@angular-devkit/build-webpack@0.1102.19',
+npm warn EBADENGINE   required: { node: '>= 10.13.0', npm: '^6.11.0 || ^7.5.6', yarn: '>= 1.13.0' },
+npm warn EBADENGINE   current: { node: 'v23.11.1', npm: '11.9.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@angular-devkit/core@11.2.19',
+npm warn EBADENGINE   required: { node: '>= 10.13.0', npm: '^6.11.0 || ^7.5.6', yarn: '>= 1.13.0' },
+npm warn EBADENGINE   current: { node: 'v23.11.1', npm: '11.9.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@angular-devkit/schematics@11.2.19',
+npm warn EBADENGINE   required: { node: '>= 10.13.0', npm: '^6.11.0 || ^7.5.6', yarn: '>= 1.13.0' },
+npm warn EBADENGINE   current: { node: 'v23.11.1', npm: '11.9.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@angular/cli@11.2.19',
+npm warn EBADENGINE   required: { node: '>= 10.13.0', npm: '^6.11.0 || ^7.5.6', yarn: '>= 1.13.0' },
+npm warn EBADENGINE   current: { node: 'v23.11.1', npm: '11.9.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@ngtools/webpack@11.2.19',
+npm warn EBADENGINE   required: { node: '>= 10.13.0', npm: '^6.11.0 || ^7.5.6', yarn: '>= 1.13.0' },
+npm warn EBADENGINE   current: { node: 'v23.11.1', npm: '11.9.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@schematics/angular@11.2.19',
+npm warn EBADENGINE   required: { node: '>= 10.13.0', npm: '^6.11.0 || ^7.5.6', yarn: '>= 1.13.0' },
+npm warn EBADENGINE   current: { node: 'v23.11.1', npm: '11.9.0' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@schematics/update@0.1102.19',
+npm warn EBADENGINE   required: { node: '>= 10.13.0', npm: '^6.11.0 || ^7.5.6', yarn: '>= 1.13.0' },
+npm warn EBADENGINE   current: { node: 'v23.11.1', npm: '11.9.0' }
+npm warn EBADENGINE }
+
+added 4 packages, removed 57 packages, changed 6 packages, and audited 1316 packages in 8s
+
+124 packages are looking for funding
+  run `npm fund` for details
+
+27 vulnerabilities (13 low, 7 moderate, 7 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.

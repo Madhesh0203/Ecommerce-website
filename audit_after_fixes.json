@@ -1,0 +1,978 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "@angular-devkit/build-angular": {
+      "name": "@angular-devkit/build-angular",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular-devkit/build-webpack",
+        "@angular/compiler-cli",
+        "@ngtools/webpack",
+        "inquirer",
+        "webpack",
+        "webpack-dev-middleware",
+        "webpack-dev-server"
+      ],
+      "effects": [],
+      "range": "<=19.2.14 || 20.0.0-next.0 - 20.0.0-rc.4",
+      "nodes": [
+        "node_modules/@angular-devkit/build-angular"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular-devkit/build-webpack": {
+      "name": "@angular-devkit/build-webpack",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "webpack",
+        "webpack-dev-server"
+      ],
+      "effects": [
+        "@angular-devkit/build-angular"
+      ],
+      "range": "<=0.1703.17",
+      "nodes": [
+        "node_modules/@angular-devkit/build-webpack"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/animations": {
+      "name": "@angular/animations",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/core"
+      ],
+      "effects": [
+        "@angular/platform-browser"
+      ],
+      "range": "<=18.2.14",
+      "nodes": [
+        "node_modules/@angular/animations"
+      ],
+      "fixAvailable": {
+        "name": "@angular/animations",
+        "version": "19.2.20",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/cli": {
+      "name": "@angular/cli",
+      "severity": "moderate",
+      "isDirect": true,
+      "via": [
+        "@schematics/update",
+        "inquirer",
+        "pacote",
+        "universal-analytics"
+      ],
+      "effects": [],
+      "range": "<=1.4.0-rc.2 || 7.0.0-beta.0 - 18.1.0-rc.1",
+      "nodes": [
+        "node_modules/@angular/cli"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/common": {
+      "name": "@angular/common",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/core",
+        {
+          "source": 1111063,
+          "name": "@angular/common",
+          "dependency": "@angular/common",
+          "title": "Angular is Vulnerable to XSRF Token Leakage via Protocol-Relative URLs in Angular HTTP Client",
+          "url": "https://github.com/advisories/GHSA-58c5-g7wp-6w37",
+          "severity": "high",
+          "cwe": [
+            "CWE-201",
+            "CWE-359"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<19.2.16"
+        }
+      ],
+      "effects": [
+        "@angular/forms",
+        "@angular/platform-browser",
+        "@angular/platform-browser-dynamic",
+        "@angular/router"
+      ],
+      "range": "<=19.2.15",
+      "nodes": [
+        "node_modules/@angular/common"
+      ],
+      "fixAvailable": {
+        "name": "@angular/common",
+        "version": "19.2.20",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/compiler": {
+      "name": "@angular/compiler",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        {
+          "source": 1111180,
+          "name": "@angular/compiler",
+          "dependency": "@angular/compiler",
+          "title": "Angular Stored XSS Vulnerability via SVG Animation, SVG URL and MathML Attributes",
+          "url": "https://github.com/advisories/GHSA-v4hv-rgfq-gp49",
+          "severity": "high",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1112156,
+          "name": "@angular/compiler",
+          "dependency": "@angular/compiler",
+          "title": "Angular has XSS Vulnerability via Unsanitized SVG Script Attributes",
+          "url": "https://github.com/advisories/GHSA-jrmj-c5cx-3cw6",
+          "severity": "high",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=18.2.14"
+        }
+      ],
+      "effects": [
+        "@angular/compiler-cli",
+        "@angular/platform-browser-dynamic"
+      ],
+      "range": "<=18.2.14",
+      "nodes": [
+        "node_modules/@angular/compiler"
+      ],
+      "fixAvailable": {
+        "name": "@angular/compiler",
+        "version": "19.2.20",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/compiler-cli": {
+      "name": "@angular/compiler-cli",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/compiler"
+      ],
+      "effects": [
+        "@angular-devkit/build-angular",
+        "@ngtools/webpack"
+      ],
+      "range": "<=18.2.14",
+      "nodes": [
+        "node_modules/@angular/compiler-cli"
+      ],
+      "fixAvailable": {
+        "name": "@angular/compiler-cli",
+        "version": "19.2.20",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/core": {
+      "name": "@angular/core",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        {
+          "source": 1112155,
+          "name": "@angular/core",
+          "dependency": "@angular/core",
+          "title": "Angular has XSS Vulnerability via Unsanitized SVG Script Attributes",
+          "url": "https://github.com/advisories/GHSA-jrmj-c5cx-3cw6",
+          "severity": "high",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<=18.2.14"
+        },
+        {
+          "source": 1113587,
+          "name": "@angular/core",
+          "dependency": "@angular/core",
+          "title": "Angular i18n vulnerable to Cross-Site Scripting",
+          "url": "https://github.com/advisories/GHSA-prjf-86w9-mfqv",
+          "severity": "high",
+          "cwe": [
+            "CWE-79"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=18.2.14"
+        }
+      ],
+      "effects": [
+        "@angular/animations",
+        "@angular/common",
+        "@angular/forms",
+        "@angular/platform-browser",
+        "@angular/router"
+      ],
+      "range": "<=18.2.14",
+      "nodes": [
+        "node_modules/@angular/core"
+      ],
+      "fixAvailable": {
+        "name": "@angular/core",
+        "version": "19.2.20",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/forms": {
+      "name": "@angular/forms",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/common",
+        "@angular/core",
+        "@angular/platform-browser"
+      ],
+      "effects": [],
+      "range": "<=19.2.15",
+      "nodes": [
+        "node_modules/@angular/forms"
+      ],
+      "fixAvailable": {
+        "name": "@angular/forms",
+        "version": "19.2.20",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/platform-browser": {
+      "name": "@angular/platform-browser",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/animations",
+        "@angular/common",
+        "@angular/core"
+      ],
+      "effects": [
+        "@angular/forms"
+      ],
+      "range": "<=19.2.15",
+      "nodes": [
+        "node_modules/@angular/platform-browser"
+      ],
+      "fixAvailable": {
+        "name": "@angular/platform-browser",
+        "version": "19.2.20",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/platform-browser-dynamic": {
+      "name": "@angular/platform-browser-dynamic",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/common",
+        "@angular/compiler",
+        "@angular/core",
+        "@angular/platform-browser"
+      ],
+      "effects": [],
+      "range": "<=19.2.15",
+      "nodes": [
+        "node_modules/@angular/platform-browser-dynamic"
+      ],
+      "fixAvailable": {
+        "name": "@angular/platform-browser-dynamic",
+        "version": "19.2.20",
+        "isSemVerMajor": true
+      }
+    },
+    "@angular/router": {
+      "name": "@angular/router",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@angular/common",
+        "@angular/core",
+        "@angular/platform-browser"
+      ],
+      "effects": [],
+      "range": "<=0.0.0-ROUTERPLACEHOLDER || 2.0.0-rc.0 - 19.2.15",
+      "nodes": [
+        "node_modules/@angular/router"
+      ],
+      "fixAvailable": {
+        "name": "@angular/router",
+        "version": "19.2.20",
+        "isSemVerMajor": true
+      }
+    },
+    "@ngtools/webpack": {
+      "name": "@ngtools/webpack",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@angular/compiler-cli",
+        "webpack"
+      ],
+      "effects": [
+        "@angular-devkit/build-angular"
+      ],
+      "range": "<=18.2.21",
+      "nodes": [
+        "node_modules/@ngtools/webpack"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "@npmcli/run-script": {
+      "name": "@npmcli/run-script",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "node-gyp"
+      ],
+      "effects": [
+        "pacote"
+      ],
+      "range": "1.1.1 - 1.8.6",
+      "nodes": [
+        "node_modules/@npmcli/run-script"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "@schematics/update": {
+      "name": "@schematics/update",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "pacote"
+      ],
+      "effects": [
+        "@angular/cli"
+      ],
+      "range": ">=0.1101.0-next.0",
+      "nodes": [
+        "node_modules/@schematics/update"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "@tootallnate/once": {
+      "name": "@tootallnate/once",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1113977,
+          "name": "@tootallnate/once",
+          "dependency": "@tootallnate/once",
+          "title": "@tootallnate/once vulnerable to Incorrect Control Flow Scoping",
+          "url": "https://github.com/advisories/GHSA-vpq2-c234-7xj6",
+          "severity": "low",
+          "cwe": [
+            "CWE-705"
+          ],
+          "cvss": {
+            "score": 3.3,
+            "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": "<3.0.1"
+        }
+      ],
+      "effects": [
+        "http-proxy-agent"
+      ],
+      "range": "<3.0.1",
+      "nodes": [
+        "node_modules/@tootallnate/once"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "browserify-sign": {
+      "name": "browserify-sign",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "elliptic"
+      ],
+      "effects": [
+        "crypto-browserify"
+      ],
+      "range": ">=2.4.0",
+      "nodes": [
+        "node_modules/browserify-sign"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "create-ecdh": {
+      "name": "create-ecdh",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "elliptic"
+      ],
+      "effects": [
+        "crypto-browserify"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/create-ecdh"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "crypto-browserify": {
+      "name": "crypto-browserify",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "browserify-sign",
+        "create-ecdh"
+      ],
+      "effects": [
+        "node-libs-browser"
+      ],
+      "range": ">=3.4.0",
+      "nodes": [
+        "node_modules/crypto-browserify"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "elliptic": {
+      "name": "elliptic",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1112030,
+          "name": "elliptic",
+          "dependency": "elliptic",
+          "title": "Elliptic Uses a Cryptographic Primitive with a Risky Implementation",
+          "url": "https://github.com/advisories/GHSA-848j-6mx2-7j84",
+          "severity": "low",
+          "cwe": [
+            "CWE-1240"
+          ],
+          "cvss": {
+            "score": 5.6,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
+          },
+          "range": "<=6.6.1"
+        }
+      ],
+      "effects": [
+        "browserify-sign",
+        "create-ecdh"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/elliptic"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "external-editor": {
+      "name": "external-editor",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "tmp"
+      ],
+      "effects": [
+        "inquirer"
+      ],
+      "range": ">=1.1.1",
+      "nodes": [
+        "node_modules/external-editor"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "http-proxy-agent": {
+      "name": "http-proxy-agent",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@tootallnate/once"
+      ],
+      "effects": [
+        "make-fetch-happen"
+      ],
+      "range": "4.0.1 - 5.0.0",
+      "nodes": [
+        "node_modules/http-proxy-agent"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "inquirer": {
+      "name": "inquirer",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "external-editor"
+      ],
+      "effects": [
+        "@angular-devkit/build-angular",
+        "@angular/cli"
+      ],
+      "range": "3.0.0 - 8.2.6 || 9.0.0 - 9.3.7",
+      "nodes": [
+        "node_modules/inquirer"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "ip": {
+      "name": "ip",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1101851,
+          "name": "ip",
+          "dependency": "ip",
+          "title": "ip SSRF improper categorization in isPublic",
+          "url": "https://github.com/advisories/GHSA-2p57-rm9w-gvfp",
+          "severity": "high",
+          "cwe": [
+            "CWE-918"
+          ],
+          "cvss": {
+            "score": 8.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+          },
+          "range": "<=2.0.1"
+        }
+      ],
+      "effects": [
+        "webpack-dev-server"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/ip"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "make-fetch-happen": {
+      "name": "make-fetch-happen",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "http-proxy-agent"
+      ],
+      "effects": [
+        "npm-registry-fetch"
+      ],
+      "range": "8.0.2 - 11.1.1",
+      "nodes": [
+        "node_modules/make-fetch-happen"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "node-gyp": {
+      "name": "node-gyp",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "request"
+      ],
+      "effects": [
+        "@npmcli/run-script"
+      ],
+      "range": "<=7.1.2",
+      "nodes": [
+        "node_modules/node-gyp"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "node-libs-browser": {
+      "name": "node-libs-browser",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "crypto-browserify"
+      ],
+      "effects": [
+        "webpack"
+      ],
+      "range": "0.4.2 || >=1.0.0",
+      "nodes": [
+        "node_modules/node-libs-browser"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "npm-registry-fetch": {
+      "name": "npm-registry-fetch",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "make-fetch-happen"
+      ],
+      "effects": [
+        "pacote"
+      ],
+      "range": "7.0.1 - 14.0.5",
+      "nodes": [
+        "node_modules/npm-registry-fetch"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "pacote": {
+      "name": "pacote",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@npmcli/run-script",
+        "npm-registry-fetch"
+      ],
+      "effects": [
+        "@angular/cli",
+        "@schematics/update"
+      ],
+      "range": "11.0.1 - 15.2.0",
+      "nodes": [
+        "node_modules/pacote"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "request": {
+      "name": "request",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1096727,
+          "name": "request",
+          "dependency": "request",
+          "title": "Server-Side Request Forgery in Request",
+          "url": "https://github.com/advisories/GHSA-p8p7-x288-28g6",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-918"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": "<=2.88.2"
+        }
+      ],
+      "effects": [
+        "node-gyp",
+        "universal-analytics"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/request"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "terser-webpack-plugin": {
+      "name": "terser-webpack-plugin",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "webpack"
+      ],
+      "effects": [
+        "webpack"
+      ],
+      "range": "<=2.2.1",
+      "nodes": [
+        "node_modules/webpack/node_modules/terser-webpack-plugin"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "tmp": {
+      "name": "tmp",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1109537,
+          "name": "tmp",
+          "dependency": "tmp",
+          "title": "tmp allows arbitrary temporary file / directory write via symbolic link `dir` parameter",
+          "url": "https://github.com/advisories/GHSA-52f5-9888-hmc6",
+          "severity": "low",
+          "cwe": [
+            "CWE-59"
+          ],
+          "cvss": {
+            "score": 2.5,
+            "vectorString": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N"
+          },
+          "range": "<=0.2.3"
+        }
+      ],
+      "effects": [
+        "external-editor"
+      ],
+      "range": "<=0.2.3",
+      "nodes": [
+        "node_modules/tmp"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "universal-analytics": {
+      "name": "universal-analytics",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "request"
+      ],
+      "effects": [
+        "@angular/cli"
+      ],
+      "range": "<=0.4.23",
+      "nodes": [
+        "node_modules/universal-analytics"
+      ],
+      "fixAvailable": {
+        "name": "@angular/cli",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "webpack": {
+      "name": "webpack",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "node-libs-browser",
+        "terser-webpack-plugin"
+      ],
+      "effects": [
+        "@angular-devkit/build-angular",
+        "@angular-devkit/build-webpack",
+        "@ngtools/webpack",
+        "terser-webpack-plugin",
+        "webpack-dev-middleware"
+      ],
+      "range": "2.0.0-beta - 5.0.0-rc.6",
+      "nodes": [
+        "node_modules/webpack"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "webpack-dev-middleware": {
+      "name": "webpack-dev-middleware",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1096729,
+          "name": "webpack-dev-middleware",
+          "dependency": "webpack-dev-middleware",
+          "title": "Path traversal in webpack-dev-middleware",
+          "url": "https://github.com/advisories/GHSA-wr3j-pwj9-hqq6",
+          "severity": "high",
+          "cwe": [
+            "CWE-22"
+          ],
+          "cvss": {
+            "score": 7.4,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N"
+          },
+          "range": "<=5.3.3"
+        },
+        "webpack"
+      ],
+      "effects": [
+        "@angular-devkit/build-angular",
+        "webpack-dev-server"
+      ],
+      "range": "<=5.3.3",
+      "nodes": [
+        "node_modules/webpack-dev-middleware"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    },
+    "webpack-dev-server": {
+      "name": "webpack-dev-server",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1108429,
+          "name": "webpack-dev-server",
+          "dependency": "webpack-dev-server",
+          "title": "webpack-dev-server users' source code may be stolen when they access a malicious web site with non-Chromium based browser",
+          "url": "https://github.com/advisories/GHSA-9jgg-88mc-972h",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-346"
+          ],
+          "cvss": {
+            "score": 6.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
+          },
+          "range": "<=5.2.0"
+        },
+        {
+          "source": 1108430,
+          "name": "webpack-dev-server",
+          "dependency": "webpack-dev-server",
+          "title": "webpack-dev-server users' source code may be stolen when they access a malicious web site",
+          "url": "https://github.com/advisories/GHSA-4v9v-hfq4-rm2v",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-749"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N"
+          },
+          "range": "<=5.2.0"
+        },
+        "ip",
+        "webpack-dev-middleware"
+      ],
+      "effects": [
+        "@angular-devkit/build-angular",
+        "@angular-devkit/build-webpack"
+      ],
+      "range": "<=5.2.0",
+      "nodes": [
+        "node_modules/webpack-dev-server"
+      ],
+      "fixAvailable": {
+        "name": "@angular-devkit/build-angular",
+        "version": "19.2.22",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 14,
+      "moderate": 8,
+      "high": 14,
+      "critical": 0,
+      "total": 36
+    },
+    "dependencies": {
+      "prod": 13,
+      "dev": 1306,
+      "optional": 28,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 1318
+    }
+  }
+}

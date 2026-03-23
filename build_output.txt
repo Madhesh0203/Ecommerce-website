@@ -1,13 +1,37 @@
 
 > ecommerce@0.0.0 build
-> ng build
+> cross-env NODE_OPTIONS=--openssl-legacy-provider ng build
 
-Node.js version v23.11.1 detected.
-Odd numbered Node.js versions will not enter LTS status and should not be used for production. For more information, please see https://nodejs.org/en/about/previous-releases/.
-Workspace extension with invalid name (defaultProject) found.
-This version of CLI is only compatible with Angular versions ^16.0.0,
-but Angular version 11.2.14 was found instead.
+- Generating browser application bundles...
+(node:26692) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+postcss-resolve-url: postcss.plugin was deprecated. Migration guide:
+https://evilmartians.com/chronicles/postcss-8-plugin-migration
+postcss-resolve-url: postcss.plugin was deprecated. Migration guide:
+https://evilmartians.com/chronicles/postcss-8-plugin-migration
+postcss-resolve-url: postcss.plugin was deprecated. Migration guide:
+https://evilmartians.com/chronicles/postcss-8-plugin-migration
+postcss-resolve-url: postcss.plugin was deprecated. Migration guide:
+https://evilmartians.com/chronicles/postcss-8-plugin-migration
+postcss-resolve-url: postcss.plugin was deprecated. Migration guide:
+https://evilmartians.com/chronicles/postcss-8-plugin-migration
+postcss-resolve-url: postcss.plugin was deprecated. Migration guide:
+https://evilmartians.com/chronicles/postcss-8-plugin-migration
+postcss-resolve-url: postcss.plugin was deprecated. Migration guide:
+https://evilmartians.com/chronicles/postcss-8-plugin-migration
+Γ£ö Browser application bundle generation complete.
+- Copying assets...
+Γ£ö Copying assets complete.
+- Generating index html...
+Γ£ö Index html generation complete.
 
-Please visit the link below to find instructions on how to update Angular.
-https://update.angular.io/
+Initial Chunk Files | Names         |      Size
+vendor.js           | vendor        |   2.65 MB
+main.js             | main          | 129.46 kB
+polyfills.js        | polyfills     | 125.89 kB
+runtime.js          | runtime       |   6.15 kB
+styles.css          | styles        |   2.43 kB
 
+| Initial Total |   2.91 MB
+
+Build at: 2026-03-23T06:22:44.838Z - Hash: 7d0fdbdbd2ec9e4e87de - Time: 10792ms
